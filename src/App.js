@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import HomePage from './components/HomePage'
+
+let artists = [
+  {
+    name: 'Wasteland Doctor',
+    bgColor: '#09132D',
+    bgImg: null
+  },
+  {
+    name: 'Eric Biggs the Lyricist',
+    bgColor: '#2F642E',
+    bgImg: null
+  },
+  {
+    name: 'Brain Chemist',
+    bgColor: '#781818',
+    bgImg: null
+  }
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <HomePage
+        artists={artists}
+      />
     </div>
   );
 }
