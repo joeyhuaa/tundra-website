@@ -6,11 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* border: solid pink 2px; */
-  height: 100vw;
+  height: 100vh;
 }
 
-div#root {
-  height: 100%;
-  padding: 0;
-}
+

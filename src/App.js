@@ -1,5 +1,7 @@
 import './App.css';
+import Navigation from './components/Navigation'
 import HomePage from './components/HomePage'
+import ericProfPic from './img/eric-prof-pic.jpg'
 
 let artists = [
   {
@@ -10,7 +12,7 @@ let artists = [
   {
     name: 'Eric Biggs the Lyricist',
     bgColor: '#2F642E',
-    bgImg: null
+    bgImg: ericProfPic
   },
   {
     name: 'Brain Chemist',
@@ -22,6 +24,7 @@ let artists = [
 function App() {
   return (
     <div className='App'>
+      <Navigation />
       <HomePage
         artists={artists}
       />

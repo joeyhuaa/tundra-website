@@ -1,4 +1,27 @@
+/* mobile first */
+
+div.artist-panel {
+  flex: 33.33333%;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  transition: backgroundImage 2.5s;
+}
+
+div.artist-panel:hover {
+  cursor: pointer;
+}
+
 p.name {
   color: whitesmoke;
   font-family: 'Roboto', sans-serif;
+  text-shadow: 1px 1px 5px black;
+}
+
+@media (min-width: 992px) {
+  /* set background-image of artist-panel to be nothing by default,
+  but on hover we fade it in */
+  div.artist-panel {
+    background-image: none;
+  }
 }

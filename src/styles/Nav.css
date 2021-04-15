@@ -1,7 +1,7 @@
 div#nav {
   position: fixed;
   background-color: black;
-  height: 100px;
+  height: 50px;
   width: 100%;
   z-index: 10;
   margin: 0;
@@ -9,11 +9,11 @@ div#nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid pink 2px;
+  /* border: solid pink 2px; */
 }
 
 #title {
-  flex: 50%;
+  flex: 80%;
   padding-left: 15px;
   font-size: large;
 }
@@ -25,7 +25,7 @@ ul#options {
 div#hamburger {
   display: flex;
   justify-content: flex-end;
-  flex: 50%;
+  flex: 20%;
   padding-right: 15px;
 }
 
@@ -34,6 +34,9 @@ div#hamburger {
 }
 
 @media (min-width: 768px) {
+  div#nav {
+    height: 100px;
+  }
   ul#options {
     display: flex;
     flex: 50%;

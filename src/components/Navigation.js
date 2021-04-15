@@ -13,7 +13,7 @@ export default function Navigation() {
         <li>TOURS</li>
       </ul>
       <div id='hamburger'>
-        <GiHamburgerMenu />
+        <GiHamburgerMenu size='2em' />
       </div>
     </div>
   )
