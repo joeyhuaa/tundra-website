@@ -1,27 +1,45 @@
 /* mobile first */
 
-div.artist-panel {
+.artist-panel {
   flex: 33.33333%;
   padding: 20px;
   background-size: cover;
   background-position: center;
   transition: backgroundImage 2.5s;
+  border: solid 1px #8c8c8c;
 }
 
 div.artist-panel:hover {
   cursor: pointer;
 }
 
+div.name-container {
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  margin: auto;
+  max-width: 200px;
+  justify-content: center;
+}
+
 p.name {
-  color: whitesmoke;
   font-family: 'Roboto', sans-serif;
-  text-shadow: 1px 1px 5px black;
+  margin: 0;
 }
 
 @media (min-width: 992px) {
   /* set background-image of artist-panel to be nothing by default,
   but on hover we fade it in */
-  div.artist-panel {
+  .artist-panel {
     background-image: none;
+  }
+
+  div.name-container {
+    background-color: transparent;
+  }
+
+  p.name {
+    color: white;
+    /* text-shadow: 1px 1px 5px black; */
   }
 }

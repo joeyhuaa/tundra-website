@@ -1,6 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import {useMediaQuery} from 'react-responsive'
 import '../styles/ArtistPanel.css'
+import {
+  BrowserRouter as Router,
+  Link
+} from "react-router-dom";
 
 export default function ArtistPanel({
   name,
@@ -24,16 +28,20 @@ export default function ArtistPanel({
   }
 
   return (
-    <div 
-      className='artist-panel'
-      style={ isLaptop ? laptopStyles() : {
-        backgroundImage: `url(${bgImg})`,
-      }}
-      onClick={panelClicked}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-    >
-      <p className='name'>{name.toUpperCase()}</p>
-    </div>
+    <Router>
+      <Link 
+        className='artist-panel' to={`/artist/${name}`}
+        style={ isLaptop ? laptopStyles() : {
+          backgroundImage: `url(${bgImg})`,
+        }}
+        onClick={panelClicked}
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+      >
+        <div className='name-container'>
+          <p className='name'>{name.toUpperCase()}</p>
+        </div>
+      </Link>
+    </Router>
   )
 }

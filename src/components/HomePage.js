@@ -2,17 +2,35 @@ import React, {useState, useEffect} from 'react';
 import '../styles/HomePage.css'
 import ArtistPanel from './ArtistPanel'
 import ArtistPage from './ArtistPage';
+import ericProfPic from '../img/eric-prof-pic.jpg'
+import wastelandProfPic from '../img/wasteland-prof-pic.png'
 
 // use firebase or something? to manage data like
 // artists
 // releases
 
+let artists = [
+  {
+    name: 'Wasteland Doctor',
+    bgColor: '#09132D',
+    bgImg: wastelandProfPic
+  },
+  {
+    name: 'Eric Biggs the Lyricist',
+    bgColor: '#2F642E',
+    bgImg: ericProfPic
+  },
+  {
+    name: 'Brain Chemist',
+    bgColor: '#781818',
+    bgImg: null
+  }
+]
+
 export default function HomePage({
-  artists
+  // artists
 }) {
   let [state, setState] = useState({
-    currPage: 'home',
-    artist: 'Eric Biggs the Lyricist'
   })
 
   let artistPanelClicked = () => {
@@ -24,7 +42,7 @@ export default function HomePage({
 
   return (
     <div id='container'>
-      {state.currPage === 'home' &&
+      {
         artists.map(artist => (
           <ArtistPanel
             key={artist.name}
@@ -34,11 +52,6 @@ export default function HomePage({
             panelClicked={artistPanelClicked}
           />
         ))
-      }
-      {state.currPage === 'artist' && 
-        <ArtistPage
-          name={state.artist}
-        />
       }
     </div>
   )
