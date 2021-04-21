@@ -28,9 +28,10 @@ export default function ArtistPanel({
   }
 
   return (
-    <Router>
+    <Router forceRefresh={true}>
       <Link 
-        className='artist-panel' to={`/artist/${name}`}
+        to={`/artist/${name}`}
+        className='artist-panel' 
         style={ isLaptop ? laptopStyles() : {
           backgroundImage: `url(${bgImg})`,
         }}

@@ -13,6 +13,7 @@ import Services from './components/Services'
 
 import ericProfPic from './img/eric-prof-pic.jpg'
 import wastelandProfPic from './img/wasteland-prof-pic.png'
+import { useState, useEffect } from 'react';
 
 let artists = [
   {
@@ -33,23 +34,16 @@ let artists = [
 ]
 
 function App() {
+
   return (
     <div className='App'>
       <Navigation />
-      <Route exact path='/' component={HomePage} />
-      <Route exact path='/services' component={Services} />
-      <Route path='/artist' component={ArtistPage} />
 
-      {/* <Switch>
-        <Route path="/artist">
-          <ArtistPage />
-        </Route>
-        <Route path="/">
-          <HomePage
-            artists={artists}
-          />
-        </Route>
-      </Switch> */}
+      <Switch>
+        <Route path='/services' component={Services} />
+        <Route path='/artist/:name' component={ArtistPage} />
+        <Route path='/' component={HomePage} />
+      </Switch>
     </div>
   );
 }

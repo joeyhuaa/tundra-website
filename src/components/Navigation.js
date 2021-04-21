@@ -9,7 +9,7 @@ import {
 export default function Navigation() {
   return (
     <div id='nav'>
-      <Router>
+      <Router forceRefresh={true}>
         <h1 id='title'>
           <Link to='/'>TUNDRA RECORDS</Link>
         </h1>

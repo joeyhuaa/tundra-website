@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Router} from "react-router-dom";
+import {BrowserRouter as Router, withRouter} from "react-router-dom";
+
+let AppWithRouter = withRouter(App)
 
 ReactDOM.render(
-  <Router>
+  <Router forceRefresh={true}>
     <React.StrictMode>
-      <App />
+      <AppWithRouter />
     </React.StrictMode>
   </Router>,
   document.getElementById('root')
