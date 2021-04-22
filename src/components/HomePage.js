@@ -34,10 +34,6 @@ export default function HomePage({
   })
 
   let artistPanelClicked = () => {
-    setState({
-      ...state, 
-      currPage: 'artist'
-    })
   }
 
   return (

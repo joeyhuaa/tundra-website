@@ -15,16 +15,24 @@ export default function ArtistPanel({
   let [hover, setHover] = useState(false)
   let isLaptop = useMediaQuery({query: '(min-width: 992px)'})
 
-  let laptopStyles = () => {
-    if (hover) {
-      return {
-        // backgroundImage: `url(${bgImg})`,
-        // animation: 'fadein 2s',
-        // webkitAnimation: 'fadein 1.5s',
+  let laptopHoverStyles = (identifier) => {
+    // styles to be used
+    let styles = {
+      'name-container': {
+        backgroundColor: 'white',
+        animation: 'fadein 1.5s forwards',
+        webkitAnimation: 'fadein 1.5s forwards',
+      },
+      'name': {
+        color: 'black'
       }
-    } else {
-      return null
     }
+
+    // logic
+    if (isLaptop) {
+      if (hover) return styles[identifier]
+      else return null
+    } else return null
   }
 
   return (
@@ -32,16 +40,19 @@ export default function ArtistPanel({
       <Link 
         to={`/artist/${name}`}
         className='artist-panel' 
-        style={ isLaptop ? laptopStyles() : {
-          backgroundImage: `url(${bgImg})`,
-        }}
         onClick={panelClicked}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
         <div className='bg-img' style={{backgroundImage: `url(${bgImg})`}} />
-        <div className='name-container'>
-          <p className='name'>{name.toUpperCase()}</p>
+        <div 
+          className='name-container'
+          style={laptopHoverStyles('name-container')}
+        >
+          <p 
+            className='name' 
+            style={laptopHoverStyles('name')}
+          >{name.toUpperCase()}</p>
         </div>
       </Link>
     </Router>

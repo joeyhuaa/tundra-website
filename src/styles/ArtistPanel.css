@@ -2,10 +2,18 @@
 
 .artist-panel {
   flex: 33.33333%;
-  padding: 20px;
   background-size: cover;
   background-position: center;
   border: solid 1px #8c8c8c;
+  position: relative;
+}
+
+div.bg-img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
 }
 
 div.name-container {
@@ -15,12 +23,15 @@ div.name-container {
   margin: auto;
   max-width: 200px;
   justify-content: center;
+  z-index: 10;
+  margin-top: 20px;
 }
 
 p.name {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   color: black;
+  z-index: 10;
 }
 
 @media (min-width: 992px) {
@@ -28,8 +39,6 @@ p.name {
   but on hover we fade it in */
   .artist-panel {
     background-image: none;
-    position: relative;
-    padding: 0;
   }
 
   .artist-panel:hover {
@@ -38,22 +47,15 @@ p.name {
 
   div.bg-img {
     opacity: 0;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
   }
 
   div.bg-img:hover {
-    -webkit-animation: fadein 1.5s;
-    animation: fadein 1.5s;
+    -webkit-animation: fadein 1.5s forwards;
+    animation: fadein 1.5s forwards;
   }
 
   div.name-container {
     background-color: transparent;
-    padding-top: 20px;
-    z-index: 10;
   }
 
   p.name {

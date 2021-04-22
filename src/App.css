@@ -1,7 +1,13 @@
+div#root {
+  background-color: black;
+}
+
 div.App {
   background-image: url('./img/tundra-bg.jpg');
   background-size: cover;
   background-position: center;
+  -webkit-animation: fadein 1.5s;
+  animation: fadein 1.5s;
 }
 
 a { 
