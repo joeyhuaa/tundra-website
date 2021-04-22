@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/joeyhuaa/tundra-website/static/css/main.8f54d9e9.chunk.css",
+    "main.js": "/joeyhuaa/tundra-website/static/js/main.50afb498.chunk.js",
+    "main.js.map": "/joeyhuaa/tundra-website/static/js/main.50afb498.chunk.js.map",
+    "runtime-main.js": "/joeyhuaa/tundra-website/static/js/runtime-main.25c80082.js",
+    "runtime-main.js.map": "/joeyhuaa/tundra-website/static/js/runtime-main.25c80082.js.map",
+    "static/js/2.8d87eda3.chunk.js": "/joeyhuaa/tundra-website/static/js/2.8d87eda3.chunk.js",
+    "static/js/2.8d87eda3.chunk.js.map": "/joeyhuaa/tundra-website/static/js/2.8d87eda3.chunk.js.map",
+    "static/js/3.451591fe.chunk.js": "/joeyhuaa/tundra-website/static/js/3.451591fe.chunk.js",
+    "static/js/3.451591fe.chunk.js.map": "/joeyhuaa/tundra-website/static/js/3.451591fe.chunk.js.map",
+    "index.html": "/joeyhuaa/tundra-website/index.html",
+    "static/css/main.8f54d9e9.chunk.css.map": "/joeyhuaa/tundra-website/static/css/main.8f54d9e9.chunk.css.map",
+    "static/js/2.8d87eda3.chunk.js.LICENSE.txt": "/joeyhuaa/tundra-website/static/js/2.8d87eda3.chunk.js.LICENSE.txt",
+    "static/media/eric-prof-pic.0bd8be20.jpg": "/joeyhuaa/tundra-website/static/media/eric-prof-pic.0bd8be20.jpg",
+    "static/media/App.css": "/joeyhuaa/tundra-website/static/media/tundra-bg.3a67cc6f.jpg",
+    "static/media/wasteland-prof-pic.e60ab7ce.png": "/joeyhuaa/tundra-website/static/media/wasteland-prof-pic.e60ab7ce.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.25c80082.js",
+    "static/js/2.8d87eda3.chunk.js",
+    "static/css/main.8f54d9e9.chunk.css",
+    "static/js/main.50afb498.chunk.js"
+  ]
+}
