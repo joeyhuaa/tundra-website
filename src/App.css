@@ -1,5 +1,12 @@
+div.App {
+  background-image: url('./img/tundra-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 a { 
   color: white; 
   text-decoration: none;
 }
+
 a:visited { text-decoration: none; }

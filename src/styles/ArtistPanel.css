@@ -5,12 +5,7 @@
   padding: 20px;
   background-size: cover;
   background-position: center;
-  transition: backgroundImage 2.5s;
   border: solid 1px #8c8c8c;
-}
-
-div.artist-panel:hover {
-  cursor: pointer;
 }
 
 div.name-container {
@@ -25,6 +20,7 @@ div.name-container {
 p.name {
   font-family: 'Roboto', sans-serif;
   margin: 0;
+  color: black;
 }
 
 @media (min-width: 992px) {
@@ -32,14 +28,41 @@ p.name {
   but on hover we fade it in */
   .artist-panel {
     background-image: none;
+    position: relative;
+    padding: 0;
+  }
+
+  .artist-panel:hover {
+    cursor: pointer;
+  }
+
+  div.bg-img {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+  }
+
+  div.bg-img:hover {
+    -webkit-animation: fadein 1.5s;
+    animation: fadein 1.5s;
   }
 
   div.name-container {
     background-color: transparent;
+    padding-top: 20px;
+    z-index: 10;
   }
 
   p.name {
     color: white;
     /* text-shadow: 1px 1px 5px black; */
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
   }
 }

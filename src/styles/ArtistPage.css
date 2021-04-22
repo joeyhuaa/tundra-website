@@ -1,32 +1,32 @@
-.info {
+div.info {
+  flex: 50%;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color-burn;
+}
 
+div.releases {
+  flex: 50%;
+  background-color: whitesmoke;
+}
+
+h1.title {
+  text-align: center;
+}
+
+.blurb {
+  color: white;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  /* border: solid pink 1px; */
 }
 
 @media (min-width: 992px) {
-  .info {
-    flex: 50%;
-  }
 
-  .releases {
-    flex: 50%;
-    background-color: whitesmoke;
-  }
+  div.info, div.releases {
 
-  .info, .releases {
-
-  }
-
-  .sub-div {
-    margin: auto;
-    width: 80%;
-    height: 80%;
-    background-color: whitesmoke;
-    opacity: 50%;
-    padding: 20px;
-  }
-
-  .sub-div > h1 {
-    text-align: center;
   }
 }
 

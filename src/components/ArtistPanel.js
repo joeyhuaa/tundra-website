@@ -18,12 +18,12 @@ export default function ArtistPanel({
   let laptopStyles = () => {
     if (hover) {
       return {
-        backgroundImage: `url(${bgImg})`
+        // backgroundImage: `url(${bgImg})`,
+        // animation: 'fadein 2s',
+        // webkitAnimation: 'fadein 1.5s',
       }
     } else {
-      return {
-
-      }
+      return null
     }
   }
 
@@ -39,6 +39,7 @@ export default function ArtistPanel({
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
+        <div className='bg-img' style={{backgroundImage: `url(${bgImg})`}} />
         <div className='name-container'>
           <p className='name'>{name.toUpperCase()}</p>
         </div>
