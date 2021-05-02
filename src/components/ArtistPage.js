@@ -1,25 +1,36 @@
 import React, {useState, useEffect} from 'react';
 import '../styles/ArtistPage.css';
-import ericProfPic from '../img/eric-prof-pic.jpg'
-import wastelandProfPic from '../img/wasteland-prof-pic.png'
+
+
+// imgs 
+import egArtist from '../img/eg-artist.jpg'
+import egArtist2 from '../img/eg-artist-2.jpg'
+import egArtist3 from '../img/eg-artist-3.jpg'
+
+import wdArtist from '../img/wd-artist.jpg'
+import wdArtist2 from '../img/wd-artist-2.jpg'
+import wdArtist3 from '../img/wd-artist-3.jpg'
+
+import jpArtist from '../img/jp-artist.jpg'
+import jpArtist2 from '../img/jp-artist-2.jpg'
 
 let artists = [
   {
     name: 'Wasteland Doctor',
     bgColor: '#09132D',
-    bgImg: wastelandProfPic,
+    bgImg: wdArtist, // make this an array
     blurb: "The doctor himself. He's legally obligated to tell you that he's not a real doctor."
   },
   {
     name: 'Eric Biggs the Lyricist',
     bgColor: '#2F642E',
-    bgImg: ericProfPic,
+    bgImg: egArtist,
     blurb: "He will murder you with his multisyllabics. A real lyrical assassin."
   },
   {
     name: 'Brain Chemist',
     bgColor: '#781818',
-    bgImg: null,
+    bgImg: jpArtist,
     blurb: "He loves mixing chemical substances inside his cranium. Turns thought patterns into sound waves."
   }
 ]

@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import '../styles/HomePage.css'
 import ArtistPanel from './ArtistPanel'
-import ArtistPage from './ArtistPage';
-import ericProfPic from '../img/eric-prof-pic.jpg'
-import wastelandProfPic from '../img/wasteland-prof-pic.png'
+
+import egPanel from '../img/eg-panel.jpg'
+import wdPanel from '../img/wd-panel.jpg'
 
 // use firebase or something? to manage data like
 // artists
@@ -13,12 +13,12 @@ let artists = [
   {
     name: 'Wasteland Doctor',
     bgColor: '#09132D',
-    bgImg: wastelandProfPic
+    bgImg: wdPanel
   },
   {
     name: 'Eric Biggs the Lyricist',
     bgColor: '#2F642E',
-    bgImg: ericProfPic
+    bgImg: egPanel
   },
   {
     name: 'Brain Chemist',

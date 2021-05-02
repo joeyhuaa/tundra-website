@@ -22,11 +22,17 @@ ul#options {
   display: none;
 }
 
-div#hamburger {
+ul#options-slider {
+  display: flex;
+  flex-direction: column;
+}
+
+#hamburger {
   display: flex;
   justify-content: flex-end;
   flex: 20%;
   padding-right: 15px;
+  cursor: pointer;
 }
 
 @media (min-width: 480px) {
@@ -44,7 +50,7 @@ div#hamburger {
     justify-content: space-around;
   }
 
-  div#hamburger {
+  #hamburger {
     display: none;
   }
 }
