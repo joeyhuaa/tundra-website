@@ -1,9 +1,9 @@
 #services-container {
     /* border: solid 2px salmon; */
-    padding-top: 100px;
+    padding-top: 150px;
     padding-left: 20px;
     padding-right: 20px;
-    width: 50%;
+    width: 90%;
     height: 20vh;
     margin: auto;
     height: 100vh;
@@ -12,6 +12,6 @@
 
 @media (min-width: 992px) {
     #services-container {
-        padding-top: 150px;
+        width: 50%;
     }
 }
