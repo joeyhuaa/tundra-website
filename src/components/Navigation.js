@@ -49,7 +49,7 @@ export default function Navigation() {
         style={hamburgerClicked ? showSliderStyles : hiddenSliderStyles}
       >
         <span 
-          style={{float:'right'}} 
+          style={{float:'right', cursor: 'pointer'}} 
           onClick={() => setHamburgerClicked(false)}
         >
           &#10005;

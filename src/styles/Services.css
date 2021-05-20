@@ -1,0 +1,14 @@
+#services-container {
+    /* border: solid 2px salmon; */
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 50%;
+    height: 20vh;
+    margin: auto;
+    height: 100vh;
+    /* background-color: black; */
+}
+
+@media (min-width: 992px) {
+}

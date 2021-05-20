@@ -1,5 +1,7 @@
 div.info {
-  flex: 50%;
+  margin: auto;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.6);
@@ -15,18 +17,25 @@ h1.title {
   text-align: center;
 }
 
-.blurb {
+.media-links {
+  margin: auto;
+  /* border: solid 1px salmon; */
+  display: flex;
+  width: 200px;
+  justify-content: space-evenly;
+}
+
+.bio {
   color: white;
   width: 90%;
   text-align: center;
   margin: auto;
-  /* border: solid pink 1px; */
+  padding-top: 50px;
 }
 
 @media (min-width: 992px) {
-
-  div.info, div.releases {
-
+  div.info {
+    width: 50%;
   }
 }
 

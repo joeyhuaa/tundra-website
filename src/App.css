@@ -1,3 +1,7 @@
+* {
+  font-weight: bold;
+}
+
 div#root {
   background-color: black;
 }
