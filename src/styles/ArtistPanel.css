@@ -1,7 +1,7 @@
 /* mobile first */
 
 .artist-panel {
-  flex: 33.33333%;
+  flex: 50%;
   background-size: cover;
   background-position: center;
   border: solid 1px #8c8c8c;
@@ -21,7 +21,7 @@ div.name-container {
   padding: 10px;
   background-color: white;
   margin: auto;
-  max-width: 200px;
+  max-width: 250px;
   justify-content: center;
   z-index: 10;
   margin-top: 20px;
@@ -32,15 +32,13 @@ p.name {
   margin: 0;
   color: black;
   z-index: 10;
+  background-color: white;
+  padding: 10px;
 }
 
 @media (min-width: 992px) {
   /* set background-image of artist-panel to be nothing by default,
   but on hover we fade it in */
-  .artist-panel {
-    background-image: none;
-  }
-
   .artist-panel:hover {
     cursor: pointer;
   }
@@ -60,7 +58,8 @@ p.name {
 
   p.name {
     color: white;
-    /* text-shadow: 1px 1px 5px black; */
+    background-color: transparent;
+    padding: 0;
   }
 
   @keyframes fadein {

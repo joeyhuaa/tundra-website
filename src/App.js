@@ -1,16 +1,15 @@
 import './App.css';
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Navigation from './components/Navigation'
 import HomePage from './components/HomePage'
-import ArtistPanel from './components/ArtistPanel';
 import ArtistPage from './components/ArtistPage';
 import Services from './components/Services'
-import { useState, useEffect } from 'react';
+import Merch from './components/Merch'
+import Shows from './components/Shows'
+// import { useState, useEffect } from 'react';
 
 function App() {
 
@@ -19,8 +18,10 @@ function App() {
       <Navigation />
 
       <Switch>
+        <Route path='/shows' component={Shows} />
+        <Route path='/merch' component={Merch} />
         <Route path='/services' component={Services} />
-        <Route path='/artist/:name' component={ArtistPage} />
+        <Route path={`/artist/:url`} component={ArtistPage} />
         <Route path='/' component={HomePage} />
       </Switch>
     </div>

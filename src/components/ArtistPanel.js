@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
+import {useState} from 'react'
 import {useMediaQuery} from 'react-responsive'
 import '../styles/ArtistPanel.css'
 import {
@@ -8,6 +9,7 @@ import {
 
 export default function ArtistPanel({
   name,
+  url,
   bgColor,
   bgImg,
   panelClicked
@@ -38,7 +40,7 @@ export default function ArtistPanel({
   return (
     <Router forceRefresh={true}>
       <Link 
-        to={`/artist/${name}`}
+        to={`/artist/${url}`}
         className='artist-panel' 
         onClick={panelClicked}
         onMouseEnter={() => setHover(true)}
@@ -53,6 +55,7 @@ export default function ArtistPanel({
             className='name' 
             style={laptopHoverStyles('name')}
           >{name.toUpperCase()}</p>
+          {/* <p style={{zIndex:100, color: 'red', backgroundColor: 'pink'}}>hello</p> */}
         </div>
       </Link>
     </Router>

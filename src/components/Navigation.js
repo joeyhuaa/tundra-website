@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import '../styles/Nav.css'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {
@@ -26,10 +26,6 @@ let hiddenSliderStyles = {
 export default function Navigation() {
   let [hamburgerClicked, setHamburgerClicked] = useState(false)
 
-  let handleHamburgerClick = () => {
-    setHamburgerClicked(true)
-  }
-
   return (
     <div id='nav'>
       <Router forceRefresh={true}>
@@ -39,7 +35,7 @@ export default function Navigation() {
         <ul id='options'>
           <Link to='/services'>SERVICES</Link>
           <Link to='/merch'>MERCH</Link>
-          <Link to='/tours'>TOURS</Link>
+          <Link to='/shows'>SHOWS</Link>
         </ul>
       </Router>
 
@@ -60,7 +56,7 @@ export default function Navigation() {
         <ul id='options-slider'>
           <Link to='/services'>SERVICES</Link>
           <Link to='/merch'>MERCH</Link>
-          <Link to='/tours'>TOURS</Link>
+          <Link to='/shows'>SHOWS</Link>
         </ul>
       </div>
     </div>
