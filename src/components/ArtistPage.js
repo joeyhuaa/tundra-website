@@ -39,11 +39,16 @@ export default function ArtistPage(props) {
           {Object.keys(icons).map(key => {
             if (artist.links[key]) {
               return (
-                <a href={artist.links[key]} target='_blank'>
+                <a 
+                  key={key}
+                  href={artist.links[key]} 
+                  target='_blank'
+                  rel="noreferrer"
+                >
                   {icons[key]}
                 </a>
               )
-            }
+            } else return null
           })}
         </div>
         <p className='bio'>{artist.bio}</p>

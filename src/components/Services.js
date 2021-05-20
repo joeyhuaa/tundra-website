@@ -13,7 +13,7 @@ export default function Services() {
         Currently, we offer recording, mixing, mastering, graphic design, video editing (lyric videos).
         Photography and videography will be coming soon.
         Please DM 
-        <a style={{color: 'skyblue'}} href='https://www.instagram.com/tundra.records/' target='_blank'> @tundrarecords </a> 
+        <a style={{color: 'skyblue'}} href='https://www.instagram.com/tundra.records/' target='_blank' rel="noreferrer"> @tundrarecords </a> 
         on Instagram for all inquiries.
       </p>
     </div>
