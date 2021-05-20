@@ -4,13 +4,7 @@ import '../styles/HomePage.css'
 import ArtistPanel from './ArtistPanel'
 import artistData from './artistData'
 
-export default function HomePage({
-  // artists
-}) {
-  // let [state, setState] = useState({
-  // })
-
-  console.log(artistData)
+export default function HomePage() {
 
   let artistPanelClicked = () => {
   }
