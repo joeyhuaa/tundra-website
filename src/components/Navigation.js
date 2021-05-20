@@ -16,6 +16,7 @@ let showSliderStyles = {
   backgroundColor:'#000',
   color:'#fff',
   transition:'0.4s ease',
+  zIndex:999
 }
 
 let hiddenSliderStyles = {

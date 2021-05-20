@@ -3,13 +3,12 @@ div#nav {
   background-color: black;
   height: 50px;
   width: 100%;
-  z-index: 10;
+  z-index: 999;
   margin: 0;
   color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: solid pink 2px; */
 }
 
 #title {
