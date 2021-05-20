@@ -10,7 +10,7 @@ export default function Services() {
       </h1>
       <p style={{color:'white'}}>
         Tundra Records aims to be a one-stop shop for musicians. 
-        Currently, we offer recording, mixing, mastering, graphic design, video editing (lyric videos).
+        Currently, we offer recording, mixing, mastering, graphic design, and video editing (lyric videos).
         Photography and videography will be coming soon.
         Please DM 
         <a style={{color: 'skyblue'}} href='https://www.instagram.com/tundra.records/' target='_blank' rel="noreferrer"> @tundrarecords </a> 
