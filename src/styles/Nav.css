@@ -24,6 +24,9 @@ ul#options {
 ul#options-slider {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  /* border: solid red 1px; */
 }
 
 #hamburger {
